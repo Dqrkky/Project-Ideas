@@ -1,0 +1,31 @@
+[
+  {
+    "id": "10",
+    "title": "Workout",
+    "description": "Evening gym session - full body workout.",
+    "datetime": "2025-04-13T18:30:00Z",
+    "location": "Gold's Gym, 5th Avenue",
+    "repeat": "daily",
+    "priority": "low",
+    "tags": [
+      "fitness",
+      "health"
+    ],
+    "notification": {
+      "enabled": true,
+      "remind_at": "2025-04-13T18:00:00Z",
+      "method": [
+        "push"
+      ]
+    },
+    "attachments": [
+      {
+        "file_name": "fitness_diet.json",
+        "file_url": "https://example.com/files/fitness_diet.json"
+      }
+    ],
+    "created_at": "2025-04-01T07:45:00Z",
+    "updated_at": "2025-04-10T07:45:00Z",
+    "is_active": true
+  }
+]
