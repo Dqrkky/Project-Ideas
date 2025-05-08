@@ -1,0 +1,316 @@
+{
+    "home": [
+        {
+            "id": "343646323745",
+            "name": "My Smart Home",
+            "address": {
+                "street": "123 Main St",
+                "city": "Anytown",
+                "state": "Anystate",
+                "postal_code": "12345",
+                "country": "CountryName"
+            },
+            "contact": {
+                "owner": "John Doe",
+                "phone": "+1-555-1234",
+                "email": "johndoe@example.com",
+                "emergency_contact": {
+                    "name": "Jane Doe",
+                    "phone": "+1-555-9876",
+                    "email": "janedoe@example.com"
+                }
+            },
+            "devices": [
+                {
+                    "id": "sensor_001",
+                    "type": "motion_sensor",
+                    "location": "living_room",
+                    "status": "active",
+                    "motion_detected": true,
+                    "last_maintenance": "2025-04-01",
+                    "battery_status": "full",
+                    "firmware_version": "v2.0.0",
+                    "sensor_state": "online",
+                    "device_health": "optimal",
+                    "alerts": [
+                        {
+                            "type": "motion_alert",
+                            "timestamp": "2025-05-08T14:22:00Z",
+                            "severity": "critical",
+                            "auto_response": {
+                                "action": "turn_on_lights",
+                                "device_id": "sensor_003"
+                            },
+                            "user_notifications": [
+                                {
+                                    "method": "SMS",
+                                    "recipient": "+1-555-1234",
+                                    "timestamp": "2025-05-08T14:22:00Z"
+                                }
+                            ]
+                        }
+                    ],
+                    "location_data": {
+                        "latitude": 40.7128,
+                        "longitude": -74.0060,
+                        "altitude": 30,
+                        "last_active": "2025-05-08T14:22:00Z"
+                    },
+                    "calibration": {
+                        "last_calibrated": "2025-04-01",
+                        "calibration_status": "successful",
+                        "calibration_data": {
+                            "sensitivity": "high",
+                            "threshold": "0.5"
+                        }
+                    },
+                    "communication_protocols": [
+                        {
+                            "protocol": "MQTT",
+                            "status": "active",
+                            "connection_quality": "high",
+                            "latency": "50ms"
+                        },
+                        {
+                            "protocol": "Zigbee",
+                            "status": "inactive",
+                            "connection_quality": "medium",
+                            "latency": "100ms"
+                        }
+                    ]
+                },
+                {
+                    "id": "sensor_002",
+                    "type": "door_sensor",
+                    "location": "front_door",
+                    "status": "inactive",
+                    "motion_detected": false,
+                    "last_maintenance": "2025-03-15",
+                    "battery_status": "low",
+                    "firmware_version": "v1.1.5",
+                    "sensor_state": "offline",
+                    "device_health": "warning",
+                    "alerts": [
+                        {
+                            "type": "door_opened",
+                            "timestamp": "2025-05-08T14:30:00Z",
+                            "severity": "medium",
+                            "auto_response": {
+                                "action": "notify_user",
+                                "user_id": "guest"
+                            },
+                            "user_notifications": [
+                                {
+                                    "method": "push_notification",
+                                    "recipient": "guest",
+                                    "timestamp": "2025-05-08T14:30:00Z"
+                                }
+                            ]
+                        }
+                    ],
+                    "location_data": {
+                        "latitude": 40.7128,
+                        "longitude": -74.0059,
+                        "altitude": 30,
+                        "last_active": "2025-05-08T14:30:00Z"
+                    },
+                    "calibration": {
+                        "last_calibrated": "2025-03-15",
+                        "calibration_status": "pending",
+                        "calibration_data": {}
+                    },
+                    "communication_protocols": [
+                        {
+                            "protocol": "MQTT",
+                            "status": "active",
+                            "connection_quality": "high",
+                            "latency": "150ms"
+                        }
+                    ]
+                }
+            ],
+            "alarm": {
+                "communication_protocols": [
+                    {
+                        "protocol": "MQTT",
+                        "status": "active",
+                        "connection_quality": "high",
+                        "latency": "50ms",
+                        "connected": true
+                    },
+                    {
+                        "protocol": "Zigbee",
+                        "status": "inactive",
+                        "connection_quality": "medium",
+                        "latency": "100ms",
+                        "connected": true
+                    }
+                ],
+                "settings": {
+                    "arming_mode": "away",
+                    "sensitivity": "high",
+                    "notification": [
+                        {
+                            "enabled": true,
+                            "method": "SMS",
+                            "phone_number": "+1-555-1234",
+                            "time_scheduled": "2025-05-08T14:15:00Z"
+                        },
+                        {
+                            "enabled": true,
+                            "method": "siren",
+                            "volume": 100,
+                            "stop_after": 5,
+                            "trigger_duration": 10,
+                            "sound_pattern": "steady"
+                        }
+                    ],
+                    "trigger_delay": 10,
+                    "alarm_sound": "siren.wav",
+                    "panic_button_enabled": true,
+                    "silent_alarm_enabled": true,
+                    "auto_disarm": false,
+                    "geofencing_enabled": true,
+                    "geo_radius": 200,
+                    "alarm_time_zone": "UTC-5",
+                    "machine_learning_model": {
+                        "model_type": "anomaly_detection",
+                        "trained_on_data": "2025-04-01",
+                        "accuracy": 98,
+                        "real_time_updates": true,
+                        "continuous_learning": true
+                    },
+                    "quantum_encryption": {
+                        "enabled": true,
+                        "protocol": "QKD",
+                        "key_exchange_rate": "high"
+                    },
+                    "predictive_maintenance": {
+                        "enabled": true,
+                        "predictive_model": {
+                            "model_type": "regression",
+                            "trained_on_data": "2025-04-01",
+                            "accuracy": 92,
+                            "predicted_failure_probability": 0.03,
+                            "real_time_monitoring": true
+                        }
+                    }
+                },
+                "logs": [
+                    {
+                        "event": "motion_detected",
+                        "device_id": "sensor_001",
+                        "timestamp": "2025-05-08T14:22:00Z",
+                        "status": "alert",
+                        "user": "admin",
+                        "severity": "critical",
+                        "action_taken": "turned_on_lights",
+                        "user_notifications": [
+                            {
+                                "method": "SMS",
+                                "recipient": "+1-555-1234",
+                                "timestamp": "2025-05-08T14:22:00Z"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "door_open",
+                        "device_id": "sensor_002",
+                        "timestamp": "2025-05-08T14:30:00Z",
+                        "status": "warning",
+                        "user": "guest",
+                        "severity": "medium",
+                        "action_taken": "notification_sent",
+                        "user_notifications": [
+                            {
+                                "method": "push_notification",
+                                "recipient": "guest",
+                                "timestamp": "2025-05-08T14:30:00Z"
+                            }
+                        ]
+                    }
+                ],
+                "user_roles": [
+                    {
+                        "role": "admin",
+                        "permissions": [
+                            "view_device_status",
+                            "change_device_settings",
+                            "manage_alarm_settings",
+                            "view_logs",
+                            "add_device",
+                            "delete_device",
+                            "manage_user_roles",
+                            "export_system_backup",
+                            "train_machine_learning_model",
+                            "access_multifactor_authentication_logs",
+                            "access_blockchain_logs"
+                        ]
+                    },
+                    {
+                        "role": "guest",
+                        "permissions": [
+                            "view_device_status",
+                            "view_logs",
+                            "trigger_panic_button",
+                            "access_personal_notifications"
+                        ]
+                    }
+                ],
+                "backup": {
+                    "last_backup": "2025-05-01T03:00:00Z",
+                    "backup_type": "full",
+                    "location": "cloud",
+                    "next_scheduled_backup": "2025-06-01T03:00:00Z",
+                    "status": "completed",
+                    "redundant_backups": [
+                        {
+                            "location": "remote_storage",
+                            "status": "pending",
+                            "backup_type": "incremental"
+                        }
+                    ]
+                }
+            },
+            "biometric_authentication": {
+                "methods": [
+                    {
+                        "enrollment_status": "complete",
+                        "type": "facial_recognition",
+                        "enabled": true
+                    },
+                    {
+                        "enrollment_status": "complete",
+                        "type": "fingerprint_scanner",
+                        "enabled": true
+                    },
+                    {
+                        "enrollment_status": "complete",
+                        "type": "voice_recognition",
+                        "enabled": true
+                    }
+                ]
+            },
+            "augmented_reality": {
+                "visualization_tools": [
+                    {
+                        "type": "live_room_mapping",
+                        "enabled": true
+                    },
+                    {
+                        "type": "security_feed_overlay",
+                        "enabled": true
+                    },
+                    {
+                        "type": "device_status_view",
+                        "enabled": true
+                    }
+                ],
+                "compatible_devices": [
+                    "AR_glasses",
+                    "smartphone"
+                ]
+            }
+        }
+    ]
+}
